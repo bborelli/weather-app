@@ -13,31 +13,45 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <input type="search" placeholder="City?" required />
-      <input type="submit" value="Search" />
-    </header>
-    <main>
-      <div>
-        <h1>Paris</h1>
-        <p>
-          Day 00:00, cloudy
-          <br />
-          Humidity: 0%, Wind: 0 km/h
-        </p>
-      </div>
-      <div>☀️ 0oC</div>
-    </main>
-    <section>Forecast</section>
+    <div class="weather-app">
+      <header>
+        <input
+          type="search"
+          placeholder="City?"
+          required
+          class="search-form-input"
+        />
+        <input type="submit" value="Search" class="search-form-button" />
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Paris</h1>
+            <p class="weather-app-details">
+              Day 00:00, cloudy
+              <br />
+              Humidity: <strong>0%</strong>, Wind: <strong>0 km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">☀️</div>
+            <div class="weather-app-temperature">0</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/bborelli" target="_blank"> Bruna Borelli</a
+        >, open-sourced on
+        <a href="https://github.com/bborelli?tab=repositories" target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://borelli-weather.netlify.app/" target="_blank">
+          Netlify</a
+        >
+      </footer>
+    </div>
   </body>
-  <footer>
-    Coded by
-    <a href="https://github.com/bborelli" target="_blank"> Bruna Borelli</a>,
-    open-sourced on
-    <a href="https://github.com/bborelli?tab=repositories" target="_blank"
-      >GitHub</a
-    >
-    and hosted on
-    <a href="https://borelli-weather.netlify.app/" target="_blank"> Netlify</a>
-  </footer>
 </html>
